@@ -1,0 +1,13 @@
+{
+  "anticipated_questions": {
+    "TRL_9": "Has the actual system successfully operated over full range of conditions in operational environment?",
+    "TRL_8": "Has the actual system successfully operated in limited operational environment?",
+    "TRL_7": "Has the full scale system prototype successfully been demonstrated in relevant operational environment?",
+    "TRL_6": "Has the engineering/pilot-scale prototype been demonstrated in relevant environment?",
+    "TRL_5": "Has the laboratory scale prototype been validated in relevant environment?",
+    "TRL_4": "Has the component / system been validated in lab?",
+    "TRL_3": "Has the proof of concept been demonstrated in a simulated environment?",
+    "TRL_2": "Has the technical solution for the system and/or process concept been formulated?",
+    "TRL_1": "Have the basic technology and principles been observed and reported?"
+  }
+}
