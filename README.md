@@ -7,10 +7,20 @@ The TRL Agent is designed to automatically evaluate and assign a Technology Read
 
 The system is modular and consists of the following core components:
 
-1.  **Database Handler (`src/db/database_handler.py`)**:
+1.  
+**Database Handler (`src/db/database_handler.py`)**:
     *   Connects to a PostgreSQL database and run migrations for schema.
+**Database Handler (`src/db/mongodb_handler.py`)**:
+    *   Alternately Connects to a mongo database which more is suitable to store json fields of paper.
     *   **Retrieval**: Fetches paper metadata via `get_paper_metadata`.
     *   **Storage**: Updates fields within the `papers` table with the computed `trl_level` via `write_trl_evaluation`.
+
+    can switch between postgres or mongodb by adjusting db handler import in **src/evaluation/deterministic_evaluator.py** and **src/pipeline.py**
+    From:
+    from src.db.database_handler import ...
+    To:
+    from src.db.mongodb_handler import ...
+
 
 2.  **Deterministic Evaluator (`src/evaluation/deterministic_evaluator.py`)**:
     *   Applies a strict rules-based engine over the pre-evaluated metadata fields.
